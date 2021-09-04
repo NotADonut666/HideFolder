@@ -13,13 +13,13 @@ const maxNumValue = 9;
 
 function randomPassword(PassLength, Alphabet)
 {
-  const _BiggestAlphabetIndex = Alphabet.length - 1; 
+  const BiggestAlphabetIndex = Alphabet.length - 1; 
 
   let pass = "";
 
   for (let i = 0; i < PassLength; i++)
    {
-    let passNum = Math.round(Math.random() * _BiggestAlphabetIndex);
+    let passNum = Math.round(Math.random() * BiggestAlphabetIndex);
     
     if(Math.round(Math.random()) === 0)
       {
