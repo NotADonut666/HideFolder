@@ -64,7 +64,6 @@ echo Invalid password
 goto End
 
 :RANDOM_PASSWORD
-echo 0
 cd .\PasswordGenerator
 node passGen %FullFolderName%  %standartPasswordLength%
 cd ..\
