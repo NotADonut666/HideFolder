@@ -2,4 +2,4 @@
 
 ## Requires:
 - Windows 7+
-- Node.js
+- [Node.js](https://nodejs.org/en/)
