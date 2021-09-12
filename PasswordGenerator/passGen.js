@@ -1,4 +1,5 @@
-import { writeFileSync, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
+import { writeHashToFile } from './hash.js';
 
 const symbols = JSON.parse(readFileSync('./symbols.json')).symbols;
 const argsName = {
@@ -36,5 +37,5 @@ function randomPassword(PassLength, Alphabet)
   return pass;
 }
 
-let password = randomPassword(passwordLength, symbols);
-writeFileSync(`../${foldername}/password`,password, "utf-8"); 
+const password = randomPassword(passwordLength, symbols);
+writeHashToFile(password, `../passwords/${foldername}`);
