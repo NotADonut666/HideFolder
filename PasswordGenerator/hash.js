@@ -8,7 +8,7 @@ const argsName = {
 
 const fileName = process.argv[argsName.filename];
 const text = process.argv[argsName.text];
-console.log(fileName, text)
+
 export function getHash(text)
 {
   return createHash('sha256').update(text).digest('hex');
