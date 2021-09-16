@@ -2,6 +2,9 @@
 cls
 title Hide Folder
 
+if NOT EXIST .\passwords (
+  mkdir passwords
+)
 if NOT EXIST .\PasswordGenerator (
   set CurrentError="main.bat must be in original folder"
   goto FAIL
